@@ -1,0 +1,4 @@
+Arun 123 IT pass
+Shakthi 323 ECE fail
+Kishore 732 IT fail
+Bharathi 392 Aero pass

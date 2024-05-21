@@ -1,0 +1,70 @@
+body {
+  background-color: black;
+}
+
+#texts {
+  position: inherit;
+  text-align: left;
+  color: white;
+  left: 10px;
+}
+
+#intro {
+  font-family: "Courier New", Courier, monospace;
+  background-color: white;
+  margin: auto;
+  border-radius: 10px;
+  top: 0;
+  width: 100%;
+  position: relative;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#content {
+  position: relative;
+  border: 3px solid white;
+  border-radius: 10px;
+  top: 10px;
+  width: 100%;
+}
+
+center {
+  position: relative;
+  border: 3px solid white;
+}
+
+#navbar {
+  position: absolute;
+  left: 1%;
+  top: 19%;
+}
+
+#nav1{
+  position: absolute;
+  right: 24%;
+  bottom: 428px;
+}
+
+#nav2{
+  position: relative;
+  right: 16%;
+}
+
+#search{
+  position: absolute;
+  top: 20.5%;
+  left: 85%;
+}
+
+#null{
+  border: none;
+}
+
+#mit{
+  position: relative;
+  left: 85%;
+}

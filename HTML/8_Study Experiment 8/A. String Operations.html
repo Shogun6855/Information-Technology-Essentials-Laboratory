@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+    <head>
+        <title>String</title>
+    </head>
+    <body>
+        <script>
+            s=prompt("Enter string 1"," ");
+            t=prompt("Enter the string to be concatenated"," ");
+            u=prompt("Enter a substring to be searched"," ");
+            document.write("Concatenated string: ",s+t);
+            document.write("<br>Result for the search of substring: ",s.includes(u));
+            document.write("<br>Reversed string: ",s.split("").reverse().join(""));
+            r=s.slice();
+            document.write("<br>Copy of string:",r);
+        </script>
+    </body>

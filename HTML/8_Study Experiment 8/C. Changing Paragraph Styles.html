@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Style</title>
+    </head>
+    <body>
+        <p id="p">Lorem ipsum has been used in the printing and typesetting industry since the 1500s. It was popularized by advertisements for Letraset transfer sheets in the 1960s. Typographers have used it to show the distinctive features of fonts, such as letter spacing and weight.</p>
+        <form>
+        <button onclick="bold()">Bold</button>
+        <button onclick="it()">Italic</button>
+        <button onclick="red()">Red</button>
+        <button onclick="blue()">Blue</button>
+        <button onclick="green()">Green</button>
+        <button onclick="mono()">Monospace</button>
+        <button onclick="cursive()">Cursive</button>
+        <label>Font-Size</label>
+        <select id="fs" onchange="changesize()">
+            <option  value="12">12</option>
+            <option  value="24">24</option>
+            <option  value="36">36</option>
+        </select><br><br>
+        <button onclick="reset()">Reset</button>
+        </form>
+    </body>
+    <script>
+        function reset(){
+            var para=document.getElementById("p").value;
+            document.getElementById("p").textContent=para;
+            
+        }
+        function bold(){
+            document.getElementById("p").style.fontWeight="bold";
+        event.preventDefault()}
+        function it(){
+            document.getElementById("p").style.fontStyle="italic";
+            event.preventDefault()}
+        function red()
+        {document.getElementById("p").style.color="red";
+        event.preventDefault()
+        }
+        function blue()
+        {document.getElementById("p").style.color="blue";
+        event.preventDefault()
+        }
+        function green()
+        {document.getElementById("p").style.color="green";
+        event.preventDefault()
+        }
+        function mono()
+        {document.getElementById("p").style.fontFamily="monospace";
+        event.preventDefault()
+        }
+        function cursive()
+        {document.getElementById("p").style.fontFamily="cursive";
+        event.preventDefault()
+        }
+        function changesize()
+        {
+        a=document.getElementById("fs").value;
+        document.getElementById("p").style.fontSize=a + "px";
+        event.preventDefault()
+    }
+    </script>
+</html>

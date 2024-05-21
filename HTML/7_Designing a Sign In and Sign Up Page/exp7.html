@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="signupstyle.css" />
+    <script src="formscripts.js"></script>
+    <title>Registration Page</title>
+  </head>
+  <body>
+    <center><h1 style="color: white">Registration Form</h1></center>
+    <form onsubmit="testeval()" id="Signin">
+      <div class="container" for="Signin">
+        <label>First name : </label>
+        <input
+          type="text"
+          placeholder="Enter first name"
+          name="fname"
+          required
+        />
+        <label>Last name : </label>
+        <input
+          type="text"
+          placeholder="Enter last name"
+          name="lname"
+          required
+        />
+        <label>Username:</label><br />
+        <input
+          type="text"
+          placeholder="Enter Username"
+          name="userid"
+          required
+        />
+        <label>Gender : </label><br />
+        <input type="radio" id="male" name="gender" value="Male" />
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="Female" />
+        <label for="female">Female</label><br />
+        <label>Email ID : </label>
+        <input
+          type="text"
+          placeholder="Enter Email address"
+          name="email"
+          required
+        />
+        <label>Password : </label>
+        <input
+          type="password"
+          placeholder="Enter Password"
+          name="password"
+          required
+        />
+        <label>Re-enter password : </label>
+        <input
+          type="password"
+          placeholder="Re-enter Password"
+          name="repassword"
+          required
+        />
+        <label>Address: </label><br />
+        <textarea
+          placeholder="Enter Address"
+          name="address"
+          rows="5"
+          cols="50"
+          required
+        ></textarea>
+        <label>Pin Code:</label><br />
+        <input
+          type="text"
+          placeholder="Enter Pin Code"
+          name="pincode"
+          required
+        />
+        <label>Mobile Number:</label><br />
+        <input
+          type="text"
+          placeholder="Enter Mobile Number"
+          name="mobile"
+          required
+        />
+        <input
+          type="checkbox"
+          id="robo-check"
+          name="HumanCheck"
+          value="human"
+        />
+        <label for="robo-check"> I am not a Robot</label><br />
+        <center>
+          <input type="submit">Sign Up</input>
+        </center>
+        <br />
+        <center>
+          <label>Existing User? <a href="exp7_1.html"> Sign in </a></label>
+        </center>
+      </div>
+    </form>
+  </body>
+</html>

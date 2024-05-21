@@ -1,0 +1,40 @@
+body {
+  background-color: black;
+}
+
+#texts {
+  position: inherit;
+  text-align: left;
+  color: white;
+  left: 10px;
+}
+
+#intro {
+  font-family: "Courier New", Courier, monospace;
+  background-color: white;
+  margin: auto;
+  border-radius: 10px;
+  top: -110px;
+  width: auto;
+  position: relative;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#content {
+  position: inherit;
+  top: -50px;
+  width: 900px;
+}
+
+center {
+  position: relative;
+  margin: auto;
+  width: 50%;
+  border: 3px solid white;
+  border-radius: 10px;
+  top: 180px;
+}

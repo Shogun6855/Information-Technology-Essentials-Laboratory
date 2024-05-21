@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Feedback Form</title>
+        <style>
+            form{
+                align-items: "center";
+                margin:0 auto;
+                width: 40%;
+            }
+        </style>
+        <script>
+            function fun()
+                {
+                    name=document.getElementById("name").value;
+                    em=document.getElementById("em").value;
+                    dept=document.getElementById("dept").value;
+                    c1=document.getElementById("c1");
+                    c2=document.getElementById("c2");
+                    c3=document.getElementById("c3");
+                    r=document.getElementById("r").value;
+                    ta=document.getElementById("comm").value;
+                    li=[c1,c2,c3];
+                    document.write("Name: "+name + " ( " + em + " )<br>Department: " + dept + "<br>Participated Event(s):<br>" );
+                    for(let i=0;i<3;i++)
+                        {
+                            if(li[i].checked)
+                                document.write(i+1,".",li[i].value,"<br>");
+                        }
+                    document.write("User Ratings: "+r+"<br>Suggetion/Comments: " + ta);
+                }
+        </script>
+    </head>
+    <body style="background-color: black; color: white;">
+        <form>
+            <label>Name</label>
+            <input type="text" id="name" required><br><br>
+            <label>Email</label>
+            <input type="email" id="em" required><br><br>
+            <label>Department</label>
+            <select id="dept" required>
+                <option></option>
+                <option value="IT">IT</option>
+                <option value="CT">CT</option>
+                <option value="AIDS">AIDS</option>
+                <option value="ECE">ECE</option>
+            </select><br><br>
+            <fieldset><legend>Participated Events</legend>
+                <label>Code in Chaos</label> 
+                <input type="checkbox" value="Code in Chaos" id="c1"><br>
+                <label>Ninja Coding</label>
+                <input type="checkbox" value="Ninja Coding" id="c2"><br>
+                <label>Lets C</label>
+                <input type="checkbox" value="Lets C" id="c3"><br>
+            </fieldset>
+            <label>Rate your experience</label><br><br>
+            <input type="range" id="r" min="0" max="10" required><br><br>
+            <label>Comments or Suggestions:</label><br>
+            <textarea id="comm" rows="4" cols="30"></textarea><br><br>
+            <input type="submit" onclick="fun()">
+        </form>
+    </body>
+</html>
